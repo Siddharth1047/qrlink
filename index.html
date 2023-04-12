@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>QR-Link Wizard</h1>
+    <form>
+        <label for="linkInput">Enter the link:</label>
+        <input type="text" id="linkInput" placeholder="Enter URL..."/>
+        <button type="button" onclick="generateQRCode()">Generate QR Code</button>
+        <button type="button" onclick="clearQRCode()">CLEAR</button>
+    </form>
+    <div id="qrCodeContainer">
+        <!-- The generated QR code will be displayed here -->
+    </div>
+    <div id="links">
+        <a href="https://twitter.com/iamsidOK">Twitter</a><br>
+        <a href="https://medium.com/@siddharthgov01">Medium Blog</a><br>
+        <a href="https://github.com/Siddharth1047">GitHub</a>
+    </div>
+
+    <script src="qrcode.js"></script>
+</body>
+</html>
